@@ -43,6 +43,7 @@
   --main-text-color: #000;
   --text-subtite-color:#fff;
   --main-text-subtitle: #555555;
+  --section-bg-color: #f5f5f5;
 }
 
 /* GENERAL */
@@ -106,7 +107,6 @@ a{
 
 /* ********** SITE-HEADER START ********* */
 .site-header {
-  margin-bottom: 20px;
   padding-top: 18px;
   padding-bottom: 18px;
   border-bottom: 1.5px solid #E5E7EA;
@@ -326,9 +326,10 @@ a{
 }
 
 .site-header-end-burger{
-  display: flex;
   align-items: center;
+  display: none;
 }
+
 
 /* ****** SITE HEADER RESPONSIVE START ****** */
 @media only screen and (max-width: 1100px) {
@@ -336,12 +337,20 @@ a{
     justify-content: space-between;
     flex-direction: column;
   }
+  .site-header-end-burger{
+    align-items: center;
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 834px) {
   .site-header-wrapper{
     flex-direction: row;
     justify-content: space-between;
+  }
+  .site-header-end-burger{
+    align-items: center;
+    display: flex;
   }
   .site-nav{
     display: none;
@@ -366,6 +375,8 @@ a{
     color: var(--main-text-color);
     
   }
+
+  
   
   .site-header-end-burger{
     display: flex;
@@ -563,7 +574,12 @@ a{
 /* Seccion principal */
 /* Slider */
 
+.site-main{
+  background-color: var(--main-bg-color);
+}
+
 .hero-section{
+  padding-top: 20px;
   padding-bottom: 100px;
 }
 .main-slider {
@@ -654,7 +670,7 @@ a{
   border-radius: 100px;
   left: 0;
   right: 0;
-  bottom: 30px;
+  bottom: -30px;
   padding-top: 4px;
   padding: 4px;
 }
@@ -858,20 +874,63 @@ a{
 
 /* ******** CARS SECTION START ****** */
 
+.cars-section{
+  padding-bottom: 160px;
+}
+
+.cars-section-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+.cars-section-subtitle {
+  width: 100%;
+  max-width: 575px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--main-text-subtitle);
+}
 
 .tab{
   /* margin-top: 1000px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
+  gap: 16px;
+  margin-bottom: 50px;
 }
 
 .tab__link{
-  color: #000;
-  text-decoration: none;
+  padding: 19px 40px;
+  background-color: var(--main-bg-color);
+  border: 1.5px solid #E5E7EA;
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--main-text-color);
+  
+}
+
+.tab__link:first-child{
+  margin-left: 0;
 }
 
 .tab__item--active .tab__link{
-  border-bottom: 2px solid #000fff;
-  background-color: #ff1493;
+  background: #299764;
+  border-radius: 100px;
+  color: var(--text-subtite-color);
+  border: 1.5px solid transparent;
 }
 
 .panel{
@@ -886,6 +945,93 @@ a{
   display: block;
 }
 
+
+
+.car-section-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.car-section-item {
+  width: 100%;
+  max-width: 387px;
+  padding: 30px 24px;
+  border-radius: 16px;
+  background-color: var(--section-bg-color);
+  transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.car-section-item:hover{
+  background-color: #299764;
+}
+
+.car-section-item:hover .cars-section-item-title{
+  color: var(--text-subtite-color);
+}
+
+.car-section-item:hover .cars-section-item-subtitle{
+  color: var(--text-subtite-color);
+}
+
+.car-section-item:hover .cars-section-chance-item-img{
+  color: var(--text-subtite-color);
+}
+
+.car-section-item:hover .cars-section-chance-item-title{
+  color: var(--text-subtite-color);
+}
+.cars-section-item-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--main-text-color);
+}
+.cars-section-item-subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--main-text-subtitle);
+}
+.cars-section-item-img {
+  margin-bottom: 16px;
+}
+.cars-section-chance-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* gap: 58px; */
+  margin-bottom: 25px;
+}
+
+.cars-section-chance-list:last-child{
+  margin-bottom: 0;
+}
+.cars-section-chance-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+  
+}
+.cars-section-chance-item-img {
+  margin-right: 15px;
+}
+.cars-section-chance-item-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  color: var(--main-text-color);
+}
 
 /* ******** CARS SECTION END ****** */
 /* ************** SITE MAIN STYLE END ************ */
