@@ -217,50 +217,88 @@
     <!-- HERO SECTION START -->
     <section class="hero-section">
       <div class="container">
-          <div class="main-slider">
-            <div class="slider-imagenes">
-              <div class="slider-img activo">
-                <img class="hero-section-img" src="./images/malibu.jpg" alt="malibu">
-                <div class="hero-section-box">
-                  <h1 class="hero-section-title">
-                    Compact cars
-                  </h1>
-                  <p class="hero-section-subtitle">Rent cars as you are comfortable and where you are comfortable.</p>
-                </div>
-              </div>
-              <div class="slider-img">
-                <img class="hero-section-img" src="./images/gelic.jpg" alt="gelic">
-                <div class="hero-section-box">
-                  <h1 class="hero-section-title">
-                    Sports cars
-                  </h1>
-                  <p class="hero-section-subtitle">Rent cars as you are comfortable and where you are comfortable.</p>
-                </div>
-              </div>
-              <div class="slider-img">
-                <img class="hero-section-img" src="./images/mers.jpg" alt="mers">
-                <div class="hero-section-box">
-                  <h1 class="hero-section-title">
-                    Vans 
-                  </h1>
-                  <p class="hero-section-subtitle">Rent cars as you are comfortable and where you are comfortable.</p>
-                </div>
+        <div class="main-slider">
+          <div class="slider-imagenes">
+            <div class="slider-img activo">
+              <img class="hero-section-img" src="./images/malibu.jpg" alt="malibu">
+              <div class="hero-section-box">
+                <h1 class="hero-section-title">
+                  Compact cars
+                </h1>
+                <p class="hero-section-subtitle">Rent cars as you are comfortable and where you are comfortable.</p>
               </div>
             </div>
-                  <form class="form-box" action="https://echo.htmlacademy.ru/" method="post">
-                    <label for="search">
-                      <input class="input-search" type="search" aria-label="">
-                    </label>
-                  </form>
-                </div>
+            <div class="slider-img">
+              <img class="hero-section-img" src="./images/gelic.jpg" alt="gelic">
+              <div class="hero-section-box">
+                <h1 class="hero-section-title">
+                  Sports cars
+                </h1>
+                <p class="hero-section-subtitle">Rent cars as you are comfortable and where you are comfortable.</p>
+              </div>
+            </div>
+            <div class="slider-img">
+              <img class="hero-section-img" src="./images/mers.jpg" alt="mers">
+              <div class="hero-section-box">
+                <h1 class="hero-section-title">
+                  Vans 
+                </h1>
+                <p class="hero-section-subtitle">Rent cars as you are comfortable and where you are comfortable.</p>
+              </div>
             </div>
           </div>
-        </section>
-        <!-- HERO SECTION END -->
-      </main>
-      <!-- MAIN END -->
-      
-      <script src="./js/main.js"></script>
-      <script src="./js/carusel.js"></script>
-    </body>
-    </html>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HERO SECTION END -->
+  <form class="form-box" action="https://echo.htmlacademy.ru/" method="post">
+    <label class="label-search" for="search">
+      <input class="input-search" type="search"  placeholder="Find the car of your dreams">
+      <div class="search-img"></div>
+    </label>
+  </form>
+  
+  
+  <!-- CARS SECTION START -->
+  <section class="cars-section">
+    <div class="container">
+      <h2 class="cars-section-title">Choose the car of your dreams</h2>
+      <p class="cars-section-title">We provide our customers with the most incredible driving emotions. That is why there are only world-class cars in our fleet</p>
+    </div>
+    
+    <ul class="tab">
+      <li class="tab__item tab__item--active">
+        <a class="tab__link" href="#panel1">Link 01</a>
+      </li>
+      <li class="tab__item">
+        <a class="tab__link" href="#panel2">Link 02</a>
+      </li>
+      <li class="tab__item">
+        <a class="tab__link" href="#panel3">Link 03</a>
+      </li>
+    </ul>
+    
+    
+    <ul class="panel">
+      <li class="panel__item panel__item--active" id="panel1">
+        <ul class="car-section-"></ul>
+        
+      </li>
+      <li class="panel__item" id="panel2">
+        <p>Item 02</p>
+      </li>
+      <li class="panel__item" id="panel3">
+        <p>Item 03</p>
+      </li>
+    </ul>
+  </section>
+  
+</main>
+<!-- MAIN END -->
+
+<script src="./js/cars.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/carusel.js"></script>
+</body>
+</html>
