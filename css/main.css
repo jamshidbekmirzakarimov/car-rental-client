@@ -256,7 +256,134 @@ a{
   color: #fff;
 }
 
-/* ******  ****** */
+.burger{
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-burger{
+  display: none;
+  width: 100%;
+  max-width: 475px;
+  min-height: 100vh;
+  padding: 24px 24px 40px 30px;
+  background-color: var(--main-bg-color);
+  transform: translateX(100%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  transition: ease 0.5s;
+}
+.site-nav-list-burger{
+  display: flex;
+  flex-direction: column;
+}
+.menu-burger-active{
+  transform: translateX(0%);
+}
+
+.menu-burger-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 78px;
+}
+
+.close-button-burger{
+  width: 58px;
+  height: 58px;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+
+.site-nav-item-burger:not(:last-child){
+  margin-bottom: 52px;
+}
+.site-nav-item-burger-link {
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  color: var(--main-text-color);
+}
+
+.site-nav-list-burger{
+  margin-bottom: 497px;
+}
+
+.site-nav-item-burger-bottom:not(:last-child){
+  margin-bottom: 16px;
+}
+.site-nav-item-burger-link-botton {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: var(--main-text-subtitle);
+}
+
+.site-header-end-burger{
+  display: flex;
+  align-items: center;
+}
+
+/* ****** SITE HEADER RESPONSIVE START ****** */
+@media only screen and (max-width: 1100px) {
+  .site-header-wrapper{
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .site-header-wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .site-nav{
+    display: none;
+  }
+  .site-header-end{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  
+  .menu-burger{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .site-nav-item-burger-link {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: var(--main-text-color);
+
+  }
+
+  .site-header-end-burger{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .site-nav-list-burger{
+    margin-bottom: 201px;
+  }
+
+  .menu-burger{
+    width: 100%;
+    max-width: 350px;
+    min-height: 100vh;
+  }
+  
+}
+/* ****** SITE HEADER RESPONSIVE END ****** */
 
 /* ********** SITE-HEADER START ********* */
 
