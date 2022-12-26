@@ -375,7 +375,7 @@ a{
     color: var(--main-text-color);
     
   }
-
+  
   
   
   .site-header-end-burger{
@@ -905,6 +905,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   gap: 16px;
   margin-bottom: 50px;
@@ -953,6 +954,7 @@ a{
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 20px;
+  margin-bottom: 40px;
 }
 
 .car-section-item {
@@ -1032,6 +1034,49 @@ a{
   margin: 0;
   color: var(--main-text-color);
 }
+
+.car-section-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 30px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #299764;
+  border-radius: 100px;
+  border: none;
+  margin: 0 auto;
+}
+
+
+/* ******* CARS SECTION RESPONSIVE START ******* */
+@media only screen and (max-width: 834px) {
+  .car-section-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 534px) {
+  .tab{
+    /* margin-top: 1000px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    list-style: none;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+}
+/* ******* CARS SECTION RESPONSIVE END ******* */
 
 /* ******** CARS SECTION END ****** */
 /* ************** SITE MAIN STYLE END ************ */
